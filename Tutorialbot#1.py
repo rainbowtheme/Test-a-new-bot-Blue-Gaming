@@ -3,7 +3,6 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 import time
-import os
 import random
 from discord import Game
 
@@ -11,6 +10,7 @@ from discord import Game
 Client = discord.client
 client = commands.Bot(command_prefix = '!')
 Clientdiscord = discord.Client()
+client.remove_command('help')
 
 
 @client.event
@@ -31,5 +31,4 @@ async def on_message(message):
         await client.send_message(message.channel,('Check Your DM :smiley:'))
         await client.send_message(message.author,'Bot by @Blue Gaming#5147')
 
-    
-client.run(os.getenv("TOKEN"))
+ client.run("TOKEN")
