@@ -1,1 +1,1 @@
-worker: python Test a new bot Blue Gaming.py
+worker: python Tutorialbot#1.py
