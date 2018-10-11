@@ -25,6 +25,6 @@ async def coinflip(ctx):
     variable = [
         "head",
         "tail",]
-    await bot.say(ctx.message.channel, "{}".format(random.choice(variable)))
+    await client.say(ctx.message.channel, "{}".format(random.choice(variable)))
     
 client.run(os.getenv("TOKEN"))
