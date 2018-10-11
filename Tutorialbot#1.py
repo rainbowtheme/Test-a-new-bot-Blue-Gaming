@@ -23,7 +23,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith('!gen'):
-var accounts = ["account1", "account2", "account3"]
+var accounts = ["account1", "account2", "account3"]:
 var account = 
 items[Math.floor(Math.random()*items.length)];
 message.author.send("Your alt is: " + account)
