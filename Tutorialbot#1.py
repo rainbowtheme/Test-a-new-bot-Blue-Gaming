@@ -20,7 +20,7 @@ async def on_ready():
     await client.change_presence(game=discord.Game(name='Type !gen'))
     print('Bot is ready.')
     
-@bot.command(pass_context=True)
+@client.command(pass_context=True)
 async def coinflip(ctx):
     variable = [
         "head",
