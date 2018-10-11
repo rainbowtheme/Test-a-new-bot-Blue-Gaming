@@ -20,13 +20,11 @@ async def on_ready():
     await client.change_presence(game=discord.Game(name='Type !gen'))
     print('Bot is ready.')
     
-@client.command()
-async def ping():
-    await client.say('Yes That Ping')
-
-@client.command(pass_context=True)
-async def test(ctx):
-    await client.say('testing')
-    await client.edit_message('tester')
+@bot.command(pass_context=True)
+async def coinflip(ctx):
+    variable = [
+        "head",
+        "tail",]
+    await bot.say(ctx.message.channel, "{}".format(random.choice(variable)))
     
 client.run(os.getenv("TOKEN"))
