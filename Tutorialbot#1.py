@@ -20,20 +20,12 @@ async def on_ready():
     await client.change_presence(game=discord.Game(name='Type !gen'))
     print('Bot is ready.')
 
-
-@client.command()  
-async def test(k : int):
-    """Chooses between multiple choices."""
-    if 0 <= k <= 50:
-        await bot.say("This is your random {} pick".format(k))
-        embed = discord.Embed(description='\n'.join(random.choices(answers, k=k)))
-        await bot.say(embed=embed)
-    else:
-        await bot.say("Invalid number")
-
-@test.error
-def choose_error(ctx, error):
-    if isinstance(error, commands.MissingRequiredArgument):
-        await bot.say("Please specify how many")
+@client.event
+async def on_message(message):
+    if message.content.startswith(!gen)
+var accounts = ["account1", "account2", "account3"]
+var account = 
+items[Math.floor(Math.random()*items.length)];
+message.author.send("Your alt is: " + account)
 
 client.run(os.getenv("TOKEN"))
