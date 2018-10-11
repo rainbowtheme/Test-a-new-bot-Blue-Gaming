@@ -21,7 +21,7 @@ async def on_ready():
     print('Bot is ready.')
 
 
-@bot.command()  
+@client.command()  
 async def test(k : int):
     """Chooses between multiple choices."""
     if 0 <= k <= 50:
@@ -31,7 +31,7 @@ async def test(k : int):
     else:
         await bot.say("Invalid number")
 
-@choose.error
+@test.error
 def choose_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await bot.say("Please specify how many")
