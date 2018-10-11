@@ -22,8 +22,7 @@ async def on_ready():
 
 
 @client.command()  
-async def choose(k : int):
-    """Chooses between multiple choices."""
+async def test(k : int):
     if 0 <= k <= 50:
         await bot.say("This is your random {} pick".format(k))
         embed = discord.Embed(description='\n'.join(random.choices(answers, k=k)))
