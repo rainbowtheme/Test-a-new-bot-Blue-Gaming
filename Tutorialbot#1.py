@@ -19,13 +19,14 @@ answers = ["apple", "ball", "cat", "dog", "elephant", "frog", "gun"]
 async def on_ready():
     await client.change_presence(game=discord.Game(name='Type !gen'))
     print('Bot is ready.')
+    
+@client.command()
+async def ping():
+    await client.say('Yes That Ping')
 
-@client.event
-async def on_message(message):
-    if message.content.startswith('!gen'):
-var accounts = ["account1", "account2", "account3"]:
-var account = 
-items[Math.floor(Math.random()*items.length)];
-message.author.send("Your alt is: " + account)
-
+@client.command(pass_context=True)
+async def test(ctx):
+    await client.say('testing')
+    await client.edit_message('tester')
+    
 client.run(os.getenv("TOKEN"))
