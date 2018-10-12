@@ -38,6 +38,4 @@ async def on_message(message):
     if message.content.startswith('!pythoneasy'):
         await client.send_message(messgae.channel,('https://github.com/rainbowtheme/python-help/blob/master/Python%20help')
                          
-                               
-    
 client.run(os.getenv("TOKEN"))
