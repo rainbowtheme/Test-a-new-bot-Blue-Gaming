@@ -34,7 +34,6 @@ async def on_message(message):
         await client.send_message(message.author,(random.choice(randomlist)))
         await client.send_message(message.channel,('Check Your DMs :smiley:'))
         await client.send_message(message.author,'Bot by @Blue Gaming#5147')
-    if message.content.startswith('!pythoneasy'):
-        await client.send_message(messgae.channel,('https://github.com/rainbowtheme/python-help/blob/master/Python%20help')
+  
                          
 client.run(os.getenv("TOKEN"))
