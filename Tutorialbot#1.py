@@ -35,8 +35,8 @@ async def on_message(message):
     if message.content.startswith('!roblox'):
         randomlist = ['solderboytown:tickey101','dude1451:daniel2003','facebookguy902:mp5killer1','IBakus:waldemar2003','Gninja13:griffin05','param2004:pumpum2004','KiaraWall88:88llaWaraiK','ShannonAdams76:67smadAnonnahS','MadisonRamos20:02somaRnosidaM','ShelleyWard74:47draWyellehS','SandraCervantes45:54setnavreCardnaS','JodyWilson89:98nosliWydoJ','AndreaMelton49:94notleMaerdnA','AndrewBradford69:96drofdarBwerdnA','RachelButler84:48reltuBlehcaR','ChristinaBell48:84lleBanitsirhC','AmberVega53:35ageVrebmA','CameronCallahan68:86nahallaCnoremaC','NatalieWatson20:02nostaWeilataN','CaseyHess85:58sseHyesaC','AnthonyWarner26:62renraWynohtnA','DouglasSherman25:52namrehSsalguoD','RandallAllen31:13nellAlladnaR','ChristinaCrane79:97enarCanitsirhC','JoshuaFlores89:98serolFauhsoJ','ElizabethHaynes24:42senyaHhtebazilE','rswgf:hertervbstrh','Lichi1011:Qrj48500','AwesomeTREXcool1:zaatar12','stronggamer10294L7:Altsarethebest10']
         await client.send_message(message.author,(random.choice(randomlist)))
-        await clienr.send_message(message.channel,('Check Your DMs :smiley'))
-        await clienr.send_message(message,author,('Bot by @Blue Gaming#5147')
+        await client.send_message(message.channel,('Check Your DMs :smiley:'))
+        await client.send_message(message.author,'Bot by @Blue Gaming#5147')
     if message.content.startswith('!stokroblox'):
         await client.send_message(message.channel,('StockRoblox = 40 account')
     if message.content.startswith('!stokminecraft'):
