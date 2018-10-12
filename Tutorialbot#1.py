@@ -11,8 +11,6 @@ from discord import Game
 Client = discord.client
 client = commands.Bot(command_prefix = '!')
 Clientdiscord = discord.Client()
-client.remove_command('help')
-answers = ["apple", "ball", "cat", "dog", "elephant", "frog", "gun"]
 
 
 @client.event
@@ -39,7 +37,7 @@ async def on_message(message):
         await client.send_message(message.author,'Bot by @Blue Gaming#5147')
     if message.content =='!stokroblox':
         await client.send_message(message.channel,('StockRoblox = 40 account')
-    if message.content.startswith('!stokminecraft'):
+    if message.content =='!stokminecraft':
         await client.send_message(message.channel,('StokMinecraft = 20 account')
     if message.content.startswith('!help'):
         await client.send_message(message.author,('!gen to get account Minecraft !roblox To get account roblox !stokroblox To get look stok account roblox !stokminecraft to Get look stok Minecraft')                          
