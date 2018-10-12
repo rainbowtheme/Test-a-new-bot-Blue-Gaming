@@ -35,13 +35,7 @@ async def on_message(message):
         await client.send_message(message.author,(random.choice(randomlist)))
         await client.send_message(message.channel,('Check Your DMs :smiley:'))
         await client.send_message(message.author,'Bot by @Blue Gaming#5147')
-    if message.content =='!stokroblox':
-        await client.send_message(message.channel,('StockRoblox = 40 account')
-    if message.content =='!stokminecraft':
-        await client.send_message(message.channel,('StokMinecraft = 20 account')
-    if message.content.startswith('!help'):
-        await client.send_message(message.author,('!gen to get account Minecraft !roblox To get account roblox !stokroblox To get look stok account roblox !stokminecraft to Get look stok Minecraft')                          
-                                  
+
                                
     
 client.run(os.getenv("TOKEN"))
